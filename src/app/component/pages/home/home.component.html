@@ -1,0 +1,8 @@
+<h2>Les plus beaux volcans d'Europe(par Katarina, Alice et Samiha</h2>
+<ul>
+  <li *ngFor="let item of volcans">
+    <p>{{ item.nom }}</p>
+    <p>{{ item.localisation }}</p>
+    <button class="btnInfo" (click)="toInfo(item.id)">click</button>
+  </li>
+</ul>
